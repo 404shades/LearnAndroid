@@ -2,6 +2,7 @@ package com.example.rohanmalik.myapplication;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -20,6 +21,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         TextView textView = (TextView)findViewById(R.id.text);
         textView.setText("Hello World");
-        Log.d("NIMIMA",textView.getText());
+        Log.d("NIMIMA",textView.getText().toString());
+        //CommitChanges
+
     }
 }
